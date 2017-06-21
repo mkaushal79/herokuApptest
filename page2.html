@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Navbar Sample</title>
+        <meta charset = "UTF-8" />
+        <meta name="viewport" content="device-width:100%; initial-scale:1" />
+        <link rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			.BIG {
+				text-transform: uppercase;
+			}
+		</style>
+		<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+	</head>
+
+	<body>
+			<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">ePlanPro <sup>&copy;</sup></a>
+				</div>
+				<ul class="nav navbar-nav">
+							<li><a href="#" active>Menu 1</a></li>
+							<li>
+								<a href="#" class="toggle-dropdown" data-toggle="dropdown"> Menu 2 <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#" class="active">link 1</a></li>
+									<li><a href="#">Link 2</a></li>
+									<li><a href="#">Link 3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Menu 3</a></li>
+							<li><a href="#">Menu 4</a></li>
+							
+				</ul>
+
+                <form class="navbar-form navbar-right">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search"/>
+						<div class="input-group-btn">
+						<button type="submit" class="btn btn-default input-control"><span class="glyphicon glyphicon-search"></span></button> 
+						</div>
+					</div>		
+                </form> 
+
+			</div>
+
+		</nav>
+
+		<div class = "container" >
+		    <form action="#"  method="get">
+				<div class="form-group has-feedback">
+					<label for="txtFname">First Name</label>
+					<input type="text" data-toggle="tooltip" title="Please Enter Your First Name" data-placement="bottom" placeholder="First Name" class="form-control BIG" id="txtFname" name="fname"></input>
+					<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+				</div>
+
+				<div class="form-group">
+					<label for="txtLname">Last Name</label>
+					<input type="text" class="form-control BIG" id="txtLname" name="lname"></input>
+				</div>
+
+				<div class="form-group">
+					<label for="dEmail">Email</label>
+					<div id="demail" class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span></label>
+					<input type="email" class="form-control" id="txtEmail" name="email"></input>
+					</div>
+					
+					<span class="help-block">Sample help text</span>	
+
+				</div>
+
+				<div class="form-group">
+					<label for="txtAddress">Address</label>
+					<input type="text" class="form-control" id="txtAddress" name="address"></input>
+				</div>
+
+				<!-- <div class="form-group">
+					<label for="srchgroup"></label>
+					<div id="srchgroup" class="input-group">
+						<input type="text" name="searchcriteria" class="form-control"></input>
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>	
+						</span>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="selList">Select Multiple Options</label>
+					<select id="selList" name="sel-List" class="form-control" multiple>
+							<option value="Option1">Option 1</option>
+							<option value="Option2">Option 2</option>
+							<option value="Option3">Option 3</option>
+							<option value="Option4">Option 4</option>
+							<option value="Option5">Option 5</option>
+							<option value="Option6">Option 6</option>
+							<option value="Option7">Option 7</option>
+							<option value="Option8">Option 8</option>
+							<option value="Option9">Option 9</option>
+							<option value="Option10">Option 10</option>
+					</select>
+				</div>
+                
+                <div class="checkbox-inline">
+					<label><input type="checkbox" value="Option1">Option 1</input></label>
+				</div>
+
+				<div class="checkbox-inline">	
+					<label><input type="checkbox" value="Option2">Option 2</input></label>
+				</div>
+
+				<div class="checkbox-inline">	
+					<label><input type="checkbox" value="Option3">Option 3</input></label>
+					
+                </div>
+
+				<div class="form-group">
+
+				<label><button class="btn btn-success" type="submit"> Submit </button></label>
+				</div>
+		
+-->
+		    </form>	   	
+	    </div>
+
+	</body>
+</html>
